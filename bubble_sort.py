@@ -5,14 +5,14 @@ for i in file.readlines():
         list.append(int(i))
     except ValueError:
         continue
-print(f"Unorganized list: {list}")
+print(f"Unorganized list: {list}\n\n")
 for vals in range(len(list) - 1):
     for i in range(len(list) - 1):
         if list[i] > list[i + 1]:
             temp = list[i + 1]
             list[i + 1] = list[i]
             list[i] = temp
-print(list)
+print(f"Organized List: {list}\n\n")
 
 
 # Notes
